@@ -1,0 +1,7 @@
+{
+  "name": "menu_Baystate",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
