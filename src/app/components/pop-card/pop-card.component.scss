@@ -1,0 +1,24 @@
+.popFoodCard {
+           
+    width: 100%;
+    padding: 1rem 1rem;
+    background: #f3f3f3;
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    position: relative;
+    border-radius: 1.5rem;
+    margin-bottom: 0.5rem;
+  
+    .card-content {
+      text-align: center;
+  
+      .title {
+        font-weight: 700;
+        font-size: 1.1rem;
+        margin-bottom: 0.2rem;
+        color: #1d1d1d;
+      }  
+  }
+
+}

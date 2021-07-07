@@ -1,0 +1,170 @@
+{
+  "name": "Breakfast",
+  "image": "/assets/images/breakfast.jpg",
+  "food": [
+      {
+          "category": "Entrées 🥞",
+          "dishes": [
+              {
+                  "name": "Buttermilk Pancakes ",
+                  "info": "Three delicious, buttery, and fluffy buttermilk pancakes cooked with golden and crisp edges",
+                  "carbs": "26g",
+                  "sodium": "233mg",
+                  "gluten": "true",
+                  "image": "/assets/images/threePancakes.png",
+                  "favorite": "false"
+              },
+              {
+                  "name": "8 Grain French Toast",
+                  "info": "Includes one garlic bread, one vegetarian pasta and one soft drink",
+                  "carbs": "",
+                  "sodium": "",
+                  "gluten": "",
+                  "image": "",
+                  "favorite": "false"
+              },
+              {
+                "name": "Cinnamon French Toast",
+                "info": "Includes one garlic bread, one vegetarian pasta and one soft drink",
+                "carbs": "",
+                "sodium": "",
+                "gluten": "",
+                "image": "",
+                "favorite": "false"
+              },
+              {
+                  "name": "Omelet",
+                  "info": "Includes one garlic bread with or without cheese, choice of two pizzas, one bottle of wine or four bottles of Moretti",
+                  "carbs": "",
+                  "sodium": "",
+                  "gluten": "",
+                  "image": "",
+                  "favorite": "false"
+              },
+              {
+                "name": "Quiche",
+                "info": "Includes one garlic bread with or without cheese, choice of two pizzas, one bottle of wine or four bottles of Moretti",
+                "carbs": "",
+                "sodium": "",
+                "gluten": "",
+                "image": "",
+                "favorite": "false"
+              },
+              {
+                "name": "Breakfast Frittata",
+                "info": "Includes one garlic bread with or without cheese, choice of two pizzas, one bottle of wine or four bottles of Moretti",
+                "carbs": "",
+                "sodium": "",
+                "gluten": "",
+                "image": "",
+                "favorite": "false"
+              }
+          ]
+      },
+      {
+          "category": "Breakfast Sides 🥓",
+          "dishes": [
+              {
+                  "name": "Turkey Bacon",
+                  "carbs": "",
+                  "sodium": "",
+                  "gluten": "",
+                  "image": "",
+                  "favorite": "false"
+              },
+              {
+                "name": "Pork Bacon",
+                "carbs": "",
+                "sodium": "",
+                "gluten": "",
+                "image": "",
+                "favorite": "false"
+              },
+              {
+                "name": "Home Fried Potatoes",
+                "carbs": "",
+                "sodium": "",
+                "gluten": "",
+                "image": "",
+                "favorite": "false"
+            },
+            {
+                "name": "Turkey Bacon",
+                "carbs": "",
+                "sodium": "",
+                "gluten": "",
+                "image": "",
+                "favorite": "false"
+            }
+          ]
+      },
+      {
+          "category": "Breads 🍞",
+          "dishes": [
+              {
+                  "name": "Salame",
+                  "price": 11.35,
+                  "info": "Spicy Italian sausage, tomato sauce, mozzarella",
+                  "image": ""
+              },
+              {
+                  "name": "Margherity",
+                  "price": 9.75,
+                  "info": "Tomato sauce, mozzarella",
+                  "image": ""
+              }
+          ]
+      },
+      {
+          "category": "Cereal 🥣",
+          "dishes": [
+              {
+                  "name": "Insalata Mista Piccola",
+                  "price": 5.99,
+                  "info": "Mixed leaf salad, cherry tomatoes and grated carrot. There can be no swaps, if you would like to add any extras please customise below.",
+                  "image": ""
+              },
+              {
+                  "name": "Insalata Mista della Casa",
+                  "price": 8.95,
+                  "info": "Large mixed salad. There can be no swaps, if you would like to add any extras please customise below.",
+                  "image": ""
+              }
+          ]
+      },
+      {
+        "category": "Yogurt 🍮",
+        "dishes": [
+            {
+                "name": "Insalata Mista Piccola",
+                "price": 5.99,
+                "info": "Mixed leaf salad, cherry tomatoes and grated carrot. There can be no swaps, if you would like to add any extras please customise below.",
+                "image": ""
+            },
+            {
+                "name": "Insalata Mista della Casa",
+                "price": 8.95,
+                "info": "Large mixed salad. There can be no swaps, if you would like to add any extras please customise below.",
+                "image": ""
+            }
+        ]
+    },
+      {
+        "category": "Fruit 🍓",
+        "dishes": [
+            {
+                "name": "Insalata Mista Piccola",
+                "price": 5.99,
+                "info": "Mixed leaf salad, cherry tomatoes and grated carrot. There can be no swaps, if you would like to add any extras please customise below.",
+                "image": ""
+            },
+            {
+                "name": "Insalata Mista della Casa",
+                "price": 8.95,
+                "info": "Large mixed salad. There can be no swaps, if you would like to add any extras please customise below.",
+                "image": ""
+            }
+        ]
+    }
+  ]
+}

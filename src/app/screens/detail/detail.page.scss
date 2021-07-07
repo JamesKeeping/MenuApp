@@ -1,0 +1,122 @@
+ion-content {
+
+    --background: #ffffff;
+    position: relative;
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0.5rem;
+
+        ion-button{
+            height: 60px;
+            width: 60px;
+
+            
+        ion-icon {
+            font-size: 2rem;
+            }
+        }
+    }
+
+
+    .outerwrapper {
+        top: 0;
+        height: 50%;
+        width: 100%;
+        background: #f0f7f4;
+        position: absolute;
+        bottom: 0;
+        border-radius: 0 0 1rem 1rem;
+        
+        .innerwrapper {
+            top: 0;
+            height: 70%;
+            width: 100%;
+            background: #cfb5ab;
+            position: absolute;
+            bottom: 0;
+            border-radius: 0 0 1rem 1rem;
+            padding: 2rem;
+
+            .image {
+                position: absolute;
+                top: 8rem;
+                width: 50%;
+                left: 50%;
+                transform: translate(-50%);
+
+            }
+
+            .card-title {
+            margin-top: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 1.2rem;
+
+            h1
+            {
+                font-weight: 700;
+                font-size: 1.4rem;
+            }
+
+            p {
+                font-size: 2.2rem;
+                font-weight: 700;
+                color: #ffb800;
+
+                sup {
+                    font-size: 1.2rem;
+                    margin-right: 0rem;
+                }
+
+            }
+            } 
+        }   
+
+    }
+
+        .about {
+
+        margin-top: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: left;
+        margin-bottom: 1.2rem;
+        font-size: 0.6rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    
+
+        h1 {
+
+            font-weight: bolder;
+            font-family: 'Segoe UI';
+            font-size: 1rem;
+           
+        }
+
+        p {
+            font-weight: bold;
+            font-size: 0.6rem;
+            line-height: 1.6;
+            color: #a7a7a7;
+        }
+    }
+
+    ion-button {
+        --box-shadow: none;
+        --border-radius: 1.8rem;
+        --background: #30a5db;
+    
+        text-transform: initial;
+        font-size: 1.2rem;
+        font-weight: 600;
+        height: 70px;
+    
+    }
+
+}
+

@@ -1,20 +1,27 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true" class="ion-no-border">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <img src="../../assets/images/baystate-health.png">
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-tabs (ionTabsDidChange) = "setSelectedTab()">
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="listing">
+        <ion-icon [name]="selected == 'listing' ? 'home': 'home'"></ion-icon>
+        <ion-label>HOME</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="cart">
+        <ion-icon [name]="selected == 'cart' ? 'cart': 'cart'"></ion-icon>
+        <ion-label>CHECKOUT</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="favorite">
+        <ion-icon [name]="selected == 'favorite' ? 'heart': 'heart'"></ion-icon>
+        <ion-label>FAVORITE</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="profile">
+        <ion-icon [name]="selected == 'profile' ? 'person': 'person'"></ion-icon>
+        <ion-label>PROFILE</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>

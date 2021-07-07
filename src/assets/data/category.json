@@ -1,0 +1,25 @@
+{
+     "categories": 
+    [
+      {
+          "id": 1,
+          "label": "breakfast",
+          "image": "../../assets/images/pancakes.png"
+      },
+      {
+        "id": 2,
+        "label": "lunch",
+         "image": "../../assets/images/sandwich.png"
+      },
+      {
+        "id": 3,
+        "label": "dinner",
+        "image": "../../assets/images/spaghetti.png"
+      },
+      {
+        "id": 4,
+        "label": "beverages",
+        "image": "../../assets/images/tea.png"
+      }
+    ]
+}

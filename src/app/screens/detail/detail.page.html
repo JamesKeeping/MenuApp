@@ -1,0 +1,47 @@
+<ion-content>
+  <div class="header">
+    <ion-buttons>
+        <ion-button routerLink="/home">
+            <ion-icon slot="icon-only" color="light" name="arrow-back"></ion-icon>
+        </ion-button>
+    </ion-buttons>
+    <ion-buttons>
+      <ion-button>
+        <ion-icon slot="icon-only" color="light" name="heart-outline"></ion-icon>
+      </ion-button>
+  </ion-buttons>
+  </div>
+
+  <!-- FOOD DETAIL CARD -->
+
+<div *ngIf="popFood">
+  <div class="outerwrapper">
+    <div class="innerwrapper">
+      <div class="image">
+        <ion-img [src]="popFood.image"></ion-img>
+      </div>
+    
+      <div class="card-content">
+        <div class="card-title">
+            <h1 class="ion-no-margin">{{popFood.title}}</h1>
+        </div>
+      </div>
+    </div>
+</div>
+
+  <!-- <div class="rates">
+      <app-badge icon="d-time-forward" text="30m"></app-badge>
+      <app-badge icon="star-outline" text="4.5"></app-badge>
+  </div> -->
+  
+  <div class="about">
+    <h1>Food Information</h1>
+    <p>{{popFood.description}}</p>
+  </div>
+ 
+
+<ion-button expand="block" shape="round" (click)="addItemToCart()"></ion-button>
+</div>
+
+
+</ion-content>

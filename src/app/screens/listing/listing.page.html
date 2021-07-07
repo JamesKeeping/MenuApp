@@ -1,0 +1,31 @@
+<ion-content>
+
+<!-- Header Section -->
+  <div class="header">
+    <h1>Menu</h1>
+  </div>
+  <app-searchbar></app-searchbar>
+
+  
+<!-- Category Section -->
+<div class="categories" >
+    <app-category-item  *ngFor="let item of categories" [item]="item" (clicked)="goToCategoryPage(item.label)"></app-category-item>
+</div>
+
+<!-- Featured Section -->
+<h1 class="featured-header">Featured</h1>
+<ion-slides [options]="featuredSlideOpts">
+  <ion-slide *ngFor="let f of featured" class="featured-slide">
+    <img [src] ="f.image"> 
+    <div class="info">
+      <ion-text color="dark"><b>{{f.label}}</b></ion-text>
+    </div>
+</ion-slide>
+  </ion-slides>
+
+<!-- Popular Section -->
+<h1 class="pop-header">Popular</h1>
+<div class="pop-foodlist" >
+    <app-pop-card *ngFor="let popFood of popFoods" [popItem]="popFood" (clicked)="goToDetailsPage(popFood.id)"></app-pop-card>
+</div>
+</ion-content>

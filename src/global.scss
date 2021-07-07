@@ -24,3 +24,31 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+@import "./theme/fonts.scss";
+
+.searchbar-input-container {
+
+
+    input 
+    {
+      height: 40px !important;
+      padding-top: 14px !important;
+      padding-bottom: 12px !important;
+      font-size: 18px !important;
+      padding-left: 40px !important; 
+    }
+
+    .searchbar-search-icon 
+    {
+        top: 10px !important;
+        width: 23px;
+        height: 23px;
+    }
+}
+
+@font-face {
+  font-family: 'Plex';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/IBMPlexSans-Regular.ttf');
+}

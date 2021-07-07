@@ -1,0 +1,33 @@
+<ion-content class="ion-padding">
+
+  <div class="content">
+    <h1>Welcome</h1>
+    <h2>Baystate <span><img src="../../../assets/images/baystate-cross.png"></span> Health</h2>
+  
+    
+    <h3>Please enter information to view menu</h3>
+    <form>
+      <app-input label="Medical Record Number"></app-input>
+      <app-input label="Last Name" type="text"></app-input>
+    </form>
+  
+    <ion-row>
+      <ion-col>
+        <ion-button>Login</ion-button>
+      </ion-col>
+      <ion-col>
+        <button class="modal" (click)="openModel()">Need Help?</button>
+      </ion-col>
+    </ion-row>
+   
+
+    <!-- <ion-item>
+        <ion-label>Choose Facility</ion-label>
+        <ion-select multiple="true"  cacnelText="Cancel" okText="Okay!">
+            <ion-select-option value=""></ion-select-option>
+        </ion-select>
+    </ion-item> -->
+  </div>
+
+  
+</ion-content>

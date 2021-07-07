@@ -1,0 +1,81 @@
+ion-content {
+    --padding-start: 1rem;
+    --padding-end: 2rem;
+    --background: linear-gradient(#ffffff 40%, #ffff, #e7e7e7 105%);
+    overflow-y: auto;
+
+    .header {
+        padding-left: 1rem;
+        padding-right: 2rem;
+        display: block;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: .9rem;
+        margin-top: 3rem;
+
+        h1 {
+            font-family: Nunito;
+            font-size: 3rem;
+            font-weight: 600;
+            color: #515151;
+            margin: 0;
+        }
+    }
+
+   
+  
+    .categories 
+    {
+        padding-right: 2rem;
+        display: grid;
+        grid-template-columns: repeat(4, 0.1fr);
+        grid-gap: 0.8rem;
+    }
+
+    .featured-header {
+
+        padding-left: 1rem;
+        padding-right: 2rem;
+        font-family:  Plex;
+        font-weight: 700;
+        color: #262626;
+        font-size: 1.8rem;
+        margin-bottom: 1.4rem;
+        margin-top: 2.0rem;
+      }
+
+      .featured-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      
+        .info {
+          font-family: 'Trebuchet MS';
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+
+      .pop-header {
+        padding-left: 1rem;
+        padding-right: 2rem;
+        font-family:  Plex;
+        font-weight: 700;
+        color: #262626;
+        font-size: 1.8rem;
+        margin-bottom: 1.4rem;
+        margin-top: 1.0rem;
+      }
+
+      .pop-foodlist{
+
+          display: grid;
+          grid-template-columns: 160px 160px;
+          grid-gap: 1rem;
+
+         
+
+  }
+}
