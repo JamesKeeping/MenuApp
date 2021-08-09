@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy, UrlSerializer } from '@angular/router';
 
@@ -15,7 +15,7 @@ import { LowerCaseUrlSerializer } from './shared/lowercaseurlserializer';
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,HttpClientModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy},
   {provide: UrlSerializer, useClass: LowerCaseUrlSerializer}],
-  bootstrap: [AppComponent],
-  
+  bootstrap: [AppComponent]
+
 })
 export class AppModule {}

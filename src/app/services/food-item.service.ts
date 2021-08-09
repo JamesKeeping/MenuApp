@@ -14,8 +14,8 @@ export class FoodItemService {
     return [
       {
         id: 1,
-        title: 'Sea Food',
-        image: '/assets/images/foods/seafood-dishes.png',
+        title: 'Baked Salmon',
+        image: '/assets/images/foods/salmon.png',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius quis metus quis euismod. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus.',
       },
@@ -28,8 +28,8 @@ export class FoodItemService {
       },
       {
         id: 3,
-        title: 'Mussels',
-        image: '/assets/images/foods/mussel.png',
+        title: 'Chicken Wrap',
+        image: '/assets/images/foods/chickenwrap.png',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius quis metus quis euismod. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus.',
       },

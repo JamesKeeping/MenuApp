@@ -3,30 +3,47 @@
   <div class="content">
     <h1>Welcome</h1>
     <h2>Baystate <span><img src="../../../assets/images/baystate-cross.png"></span> Health</h2>
-  
-    
     <h3>Please enter information to view menu</h3>
-    <form>
-      <app-input label="Medical Record Number"></app-input>
-      <app-input label="Last Name" type="text"></app-input>
-    </form>
-  
+
+    
+    <form [formGroup]="createPatientForm" (ngSubmit)="loginPatient()"> 
+      <!-- //MRN input -->
+      <div class="mrn-field">
+        <label [ngClass]="focused ? 'label-focused' : ''">Medical Record Number</label>
+        <input (focus)="focused = true" (blur)="onBlurEvent($event)" formControlName="mrn" name="mrn" id="mrn"/>
+      </div>
+        <div *ngFor="let error of errorMessages.mrn">
+        <ng-container *ngIf="mrn.hasError(error.type) && (mrn.dirty || mrn.touched) && !createPatientForm.get('mrn').valid">
+            <p class="error-message">{{error.message}}</p>
+        </ng-container>
+        </div>
+
+      <div class="lastname-field">
+        <label [ngClass]="focused2 ? 'label-focused2' : ''">Lastname</label>
+        <input (focus)="focused2 = true" (blur)="onBlurEvent2($event)" formControlName="lastname" name="lastname" id="lastname"/>
+      </div>
+      <div *ngFor="let error of errorMessages.lastname">
+        <ng-container *ngIf="lastname.hasError(error.type) && (lastname.dirty || lastname.touched) && !createPatientForm.get('lastname').valid">
+            <p class="error-message">{{error.message}}</p>
+        </ng-container>
+      </div>
+
     <ion-row>
       <ion-col>
-        <ion-button>Login</ion-button>
+        <ion-button [disabled]="createPatientForm.invalid" type="submit" (click)="loginPatient()">Login</ion-button>
       </ion-col>
       <ion-col>
-        <button class="modal" (click)="openModel()">Need Help?</button>
+        <button class="modal" (click)="openModel()" >Need Help?</button>
       </ion-col>
     </ion-row>
-   
-
+    </form>
     <!-- <ion-item>
         <ion-label>Choose Facility</ion-label>
         <ion-select multiple="true"  cacnelText="Cancel" okText="Okay!">
             <ion-select-option value=""></ion-select-option>
         </ion-select>
     </ion-item> -->
+
   </div>
 
   

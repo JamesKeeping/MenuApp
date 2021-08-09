@@ -5,26 +5,26 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './input.component.html',
   styleUrls: ['./input.component.scss'],
 })
-export class InputComponent implements OnInit {
+export class InputComponent {
   //define each row for input fields
-  @Input() label: string;
-  @Input() type = 'text' 
+  // @Input() label: string;
+  // @Input() type = 'text' 
+  // @Input() controlName: string;
 
+  // focused: boolean;
 
-  focused: boolean;
+  // constructor() { }
 
-  constructor() { }
+  // ngOnInit() {}
 
-  ngOnInit() {}
+  // //Creates Angular blur effect for input bar
+  // onBlurEvent(event: any) {
+  //   const value = event.target.value;
 
-  //Creates Angular blur effect for input bar
-  onBlurEvent(event: any) {
-    const value = event.target.value;
+  //   if(!value) {
+  //       this.focused = false;
+  //   }
 
-    if(!value) {
-        this.focused = false;
-    }
-}
 
 
 }

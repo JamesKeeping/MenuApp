@@ -1,0 +1,16 @@
+ion-content {
+    overflow: hidden;
+    overflow-y: hidden;
+    --offset-bottom: auto!important;
+    --overflow: hidden;
+     overflow: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    ion-icon {
+        font-size: 50px;
+        position: relative;
+        left: 15px;
+    }
+
+}

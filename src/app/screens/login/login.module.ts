@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
@@ -8,6 +8,7 @@ import { LoginPageRoutingModule } from './login-routing.module';
 
 import { LoginPage } from './login.page';
 import { SharedComponentsModule } from 'src/app/shared/shared-components.module';
+import { LoginHelpModule } from 'src/app/components/login-help/login-help.module';
 
 @NgModule({
   imports: [
@@ -15,7 +16,9 @@ import { SharedComponentsModule } from 'src/app/shared/shared-components.module'
     FormsModule,
     IonicModule,
     LoginPageRoutingModule,
-    SharedComponentsModule
+    SharedComponentsModule,
+    LoginHelpModule,
+    ReactiveFormsModule
   ],
   declarations: [LoginPage]
 })
